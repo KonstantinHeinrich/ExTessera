@@ -3,16 +3,20 @@
 buildscript {
     ext {
         support_version = '26.1.0'
-        kotlin_version = '1.1.4-3'
-        realm_version = '3.1.3'
+        kotlin_version = '1.2.51'
+        realm_version = '3.5.0'
         dagger_version = '2.10'
         rxbinding_version = '1.0.1'
     }
     repositories {
-        jcenter()
+        mavenCentral()
+        google()
+        maven {
+            url "https://artifactory.appodeal.com/appodeal-public"
+        }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.3'
+        classpath 'com.android.tools.build:gradle:3.2.1'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         classpath "io.realm:realm-gradle-plugin:$realm_version"
     }
@@ -20,10 +24,12 @@ buildscript {
 
 allprojects {
     repositories {
-        jcenter()
+        mavenCentral()
+        google()
         maven {
-            url "https://maven.google.com"
+            url "https://artifactory.appodeal.com/appodeal-public"
         }
+
     }
 }
 
