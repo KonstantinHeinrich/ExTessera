@@ -3,7 +3,7 @@
 buildscript {
     ext {
         support_version = '26.1.0'
-        kotlin_version = '1.2.51'
+        kotlin_version = '1.5.21'
         realm_version = '3.5.0'
         dagger_version = '2.10'
         rxbinding_version = '1.0.1'
@@ -16,7 +16,7 @@ buildscript {
         }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.2.1'
+        classpath 'com.android.tools.build:gradle:4.2.2'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         classpath "io.realm:realm-gradle-plugin:$realm_version"
     }

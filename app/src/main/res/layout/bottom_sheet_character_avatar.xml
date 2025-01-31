@@ -17,7 +17,6 @@
             name="parent"
             type="ny.gelato.extessera.base.BaseView"/>
 
-        <import type="java.lang.String"/>
         <import type="android.view.View"/>
     </data>
 

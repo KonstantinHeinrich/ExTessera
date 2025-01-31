@@ -11,7 +11,6 @@
 
         <import type="android.view.View"/>
 
-        <import type="java.lang.String"/>
     </data>
 
 

@@ -241,7 +241,7 @@ open class Character(
 
     fun attacksPerAction(): Int = maxOf(
             primary.attacksPerAction(),
-            multiclasses.maxBy { it.attacksPerAction() }?.attacksPerAction() ?: 0)
+            multiclasses.maxByOrNull { it.attacksPerAction() }?.attacksPerAction() ?: 0)
 
     fun racialTraits(): List<String> = ArrayList<String>().apply {
         when (race) {
