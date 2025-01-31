@@ -8,7 +8,6 @@ plugins {
 
 android {
     compileSdkVersion 26
-    buildToolsVersion "26.0.1"
     defaultConfig {
         applicationId "ny.gelato.extessera"
         minSdkVersion 19
@@ -28,6 +27,7 @@ android {
         }
     }
     dataBinding.enabled = true
+    namespace 'ny.gelato.extessera'
 }
 
 gradle.projectsEvaluated {

@@ -306,6 +306,8 @@ open class Character(
                 add("Hellish Resistance")
                 add("Infernal Legacy (3rd & 5th level)")
             }
+
+            Race.HUMAN -> TODO()
         }
     }
 

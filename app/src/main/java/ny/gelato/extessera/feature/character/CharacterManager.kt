@@ -145,6 +145,8 @@ class CharacterManager @Inject constructor(val realm: Realm, val id: String) : C
                 NoteModel.Update.ARCHIVED -> {
                     characterNote.archived = if (characterNote.archived == null) Date() else null
                 }
+
+                null -> TODO()
             }
             character.updated = Date()
         }
